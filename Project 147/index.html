@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene>
+            <!--Sky-->
+            <a-entity id = "sky">
+                <a-sky src = "assets/sky.jpg"></a-sky>
+            </a-entity>
+
+            <!--Camera-->
+            <a-entity id = "camera" position = "0 3 20">
+                <a-camera>
+                </a-camera>
+            </a-entity>
+
+            <!--Ground-->
+            <a-entity id = "ground">
+                <a-plane src = "assets/ground.jpg" position = "0 0 0" rotation = "-90 0 0" width = "20" height="20"></a-plane>
+            </a-entity>
+            
+            <!--Carpet-->
+            <a-entity id = "carpet" >
+                <a-plane src = "assets/carpet.jpg" position = "0 0.01 0" width = "10" height = "10" rotation = "-90 0 0"></a-plane>
+            </a-entity>
+            
+            <!--Table-->
+            <a-entity id = "table">
+                <a-cylinder position = "0 1.2 0" src = "assets/dining-table.jpeg" height = "2.5"></a-cylinder>
+                <a-box position = "0 2.5 0" src = "assets/dining-table.jpeg" depth = "7.5" height = "0.125" width = "10"></a-box>
+            </a-entity>
+            
+            <!--Chair-->
+            <a-entity id = "chair">
+                <a-cylinder src = "assets/chair.jpeg" position = "-7 0.01 1" height = "0.3" radius = "1.5"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "-7 0.01 1" height = "3" radius = "0.25"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "-7 1.6 1" height = "0.3" radius = "1.5"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "-8 3 1" height = "0.3" radius = "1.5" rotation = "0 0 90"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "7 0.01 1" height = "0.3" radius = "1.5"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "7 0.01 1" height = "3" radius = "0.25"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "7 1.6 1" height = "0.3" radius = "1.5"></a-cylinder>
+                <a-cylinder src = "assets/chair.jpeg" position = "8 3 1" height = "0.3" radius = "1.5" rotation = "0 0 90"></a-cylinder>
+            </a-entity>
+            
+            <!--Wall-->
+            <a-entity id = "wall">
+                <a-plane src = "assets/wall.jpeg" position = "0 10 -10" width = "20" height = "20"></a-plane>
+            </a-entity>
+            
+            <!--Paintings-->
+            <a-entity id = "paintings">
+                <a-plane src = "assets/left-poster.png" position = "-5.5 8 -10" width = "5" height = "7"></a-plane>
+                <a-plane src = "assets/middle-poster.png" position = "0.2 8 -10" width = "5" height = "7"></a-plane>
+                <a-plane src = "assets/left-poster.png" position = "6 8 -10" width = "5" height = "7"></a-plane>
+            </a-entity>
+
+            <!--Hanging-Lamp-->
+            <a-entity id = "hanging-lamp">
+                <a-cylinder position = "0 15 0" height = "5" radius = "0.25" color = "pink"></a-cylinder>
+                <a-cone position = "0 11 0" height = "3" radius-bottom = "2.5" radius-top = "0.3" color = "pink"></a-cone>
+            </a-entity>
+
+            <!--Bulb-->
+            <a-entity id = "bulb">
+                <a-sphere position = "0 9.7 0" color = "yellow" radius = "1.2"></a-sphere>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
